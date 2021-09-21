@@ -1,0 +1,31 @@
+/*galeria de imagenes*/
+
+$backGroundColor: #000000;
+
+section{
+    background: $backGroundColor;
+    border: none;
+}
+
+#galeria{
+    background: $backGroundColor;
+    border: none;
+}
+
+/*bucle en galeria de fotos*/
+
+@for $i from 1 through 3{
+    #galeria .col-lg-4#{$i}{
+        margin: 0;
+        padding: 25px;}
+}
+
+#galeria img{
+    width: 100%;
+    height: 250px;
+}    
+
+#galeria img:hover{
+    border:5px solid #ffffff;
+}
+

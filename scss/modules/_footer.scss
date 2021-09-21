@@ -1,0 +1,71 @@
+/*footer*/
+
+$footerTheme: #000000;
+
+footer{
+    @if $footerTheme == #000000{
+    background-color:#000000;
+    border-top: 0px solid gray;
+}   @else{
+    background-color:#000000;
+    border-top: 0px solid gray;}
+}
+
+:root{
+    --facebook:#3b5999;
+    --instagram:#e4405f;
+    --spotify: #22F709;
+    --youtube: #f70909;
+}
+
+.redesContainer{
+    display: flex;
+    height: 25vh;
+    align-items:center;
+    justify-content: center;
+}
+
+.redesContainer ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 58px;
+    height: 50px;
+    text-align: center;
+}
+
+.redesContainer ul li a{
+    display: block;
+    padding: 0 10px;
+    background:gray;
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.redesContainer ul:hover a{
+    filter: blur(2px);
+}
+
+.redesContainer ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+    filter: none;
+}
+
+.redesContainer ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.redesContainer ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redesContainer ul li .spotify:hover{
+    background: var(--spotify);
+}
+
+.redesContainer ul li .youtube:hover{
+    background: var(--youtube);
+}

@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/*galeria de imagenes*/
+section {
+  background: #000000;
+  border: none; }
+
+#galeria {
+  background: #000000;
+  border: none; }
+
+/*bucle en galeria de fotos*/
+#galeria .col-lg-41 {
+  margin: 0;
+  padding: 25px; }
+
+#galeria .col-lg-42 {
+  margin: 0;
+  padding: 25px; }
+
+#galeria .col-lg-43 {
+  margin: 0;
+  padding: 25px; }
+
+#galeria img {
+  width: 100%;
+  height: 250px; }
+
+#galeria img:hover {
+  border: 5px solid #ffffff; }
+
+/*formulario de contacto*/
+form {
+  margin: auto;
+  width: 400px;
+  padding: 2em;
+  border: 1px solid gray;
+  border-radius: 1em;
+  color: #ffffff; }
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+  /* Proporcionar espacio para escribir texto */
+  height: 10em;
+  width: 300px;
+  color: #000000; }
+
+/*textos de formulario*/
+h2 {
+  font-family: mifuenteAgregada;
+  font-size: 25px;
+  padding: 40px;
+  text-align: center;
+  color: #ffffff; }
+
+/*footer*/
+footer {
+  background-color: #000000;
+  border-top: 0px solid gray; }
+
+:root {
+  --facebook:#3b5999;
+  --instagram:#e4405f;
+  --spotify: #22F709;
+  --youtube: #f70909; }
+
+.redesContainer {
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  justify-content: center; }
+
+.redesContainer ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 58px;
+  height: 50px;
+  text-align: center; }
+
+.redesContainer ul li a {
+  display: block;
+  padding: 0 10px;
+  background: gray;
+  color: #ffffff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: .2s; }
+
+.redesContainer ul:hover a {
+  filter: blur(2px); }
+
+.redesContainer ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
+  filter: none; }
+
+.redesContainer ul li .facebook:hover {
+  background: var(--facebook); }
+
+.redesContainer ul li .instagram:hover {
+  background: var(--instagram); }
+
+.redesContainer ul li .spotify:hover {
+  background: var(--spotify); }
+
+.redesContainer ul li .youtube:hover {
+  background: var(--youtube); }
+
+/*Menu*/
+nav {
+  height: 100px;
+  width: 100%;
+  font-family: mifuenteAgregada;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  width: 140px;
+  margin-left: 20px; }
+
+.bar-btn {
+  font-size: 25px;
+  color: #ffffff;
+  margin-right: 20px;
+  cursor: pointer; }
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.95);
+  text-align: right;
+  transition: all .5s; }
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s;
+  text-align: center; }
+
+.nav-menu li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.nav-menu li a.active, .nav-menu li a:hover {
+  color: purple;
+  transition: .3s; }
+
+#check {
+  display: none; }
+
+#check:checked ~ .nav-menu {
+  height: 100vh; }
+
+#check:checked ~ .nav-menu li {
+  display: block; }
+
+/*variables*/
+/*adaptive*/
+@media only screen and (min-width: 768px) {
+  #galeria {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media only screen and (min-width: 1024px) {
+  #galeria {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-left: 50px; }
+  nav {
+    height: 100px; }
+  .bar-btn {
+    display: none; }
+  .nav-menu {
+    position: relative;
+    height: 100%;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px; }
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none; }
+  .nav-menu li a {
+    font-size: 25px;
+    text-decoration: none; } }
+
+@media only screen and (min-width: 768px) {
+  #laBanda {
+    grid-template-columns: repeat(2, 1fr); }
+  #laBanda p {
+    grid-template-columns: repeat(2, 1fr); }
+  #laBanda ul li {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (min-width: 1024px) {
+  #laBanda {
+    grid-template-columns: repeat(2, 1fr); }
+  #laBanda p {
+    grid-template-columns: repeat(2, 1fr); }
+  #laBanda ul li {
+    grid-template-columns: repeat(2, 1fr); } }
+
+/*historia de la banda*/
+h1 {
+  color: #ffffff;
+  font-size: 35px;
+  font-family: mifuenteAgregada;
+  text-align: center;
+  padding: 70px; }
+
+#laBanda {
+  display: grid;
+  color: #ffffff;
+  font-size: 25px;
+  align-content: center; }
+
+#laBanda p {
+  padding-top: 25px; }
+
+ul li {
+  text-align: center;
+  list-style: none; }
+
+.img_banda {
+  height: 700px;
+  width: 500px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  font-size: 62,5%; }
+
+/*color de fondo de body*/
+body {
+  background-color: #000000;
+  margin: 0; }
+
+/*Cabecera*/
+header {
+  width: 100%;
+  height: 100px;
+  background: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }

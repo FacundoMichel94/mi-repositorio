@@ -1,0 +1,41 @@
+/*formulario de contacto*/
+
+$fonts: mifuenteAgregada;
+
+form{
+    margin: auto;
+    width: 400px;
+    padding: 2em;
+    border: 1px solid gray;
+    border-radius: 1em;
+    color:#ffffff;
+    
+}
+
+textarea{
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align:top;        
+     /* Proporcionar espacio para escribir texto */
+    height: 10em;
+    width: 300px;
+    color: $backGroundColor;
+}
+
+/*textos de formulario*/
+
+$colorfont: #ffffff;
+
+h2{
+    @if $colorfont == #ffffff{
+        font-family: $fonts;
+        font-size: 25px;
+        padding: 40px;
+        text-align: center;
+        color: #ffffff;
+    }@else{
+        font-family: $fonts;
+        font-size: 25px;
+        padding: 40px;
+        text-align: center;
+        color: #ffffff;}
+}
